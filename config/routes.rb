@@ -10,6 +10,11 @@ Rails.application.routes.draw do
   
   get '/user/login'
   get '/user/login_process'
+  get '/user/login_true/:id' => 'user#login_true'
+  get '/user/login_false'
+  
+  get '/user/logout/:id' => 'user#logout'
+   
   
   get '/user/modify/:id' => 'user#modify'
   get '/user/update/:id' => 'user#update'
