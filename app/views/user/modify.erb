@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>User list</h1>
+    
+    <div class="form-group">
+        <form action='/user/update/<%= @user.id %>'>
+            <div class="form-group">
+                <label for="email">이메일</label>
+                <input type="email" class="form-control" name="email" value="<%= @user.email %>">
+            </div>
+            
+            
+        
+            <div class="form-group">
+                <label for="password">비밀번호</label></label>
+                <input type="text" class="form-control" name="password" value="<%= @user.password %>">
+            </div>
+        
+            <a href="/" class="btn btn-secondary">홈으로</a>
+            <button type="submit" class="btn btn-primary">수정</button>
+        </form>    
+    </div>
+</div>
+
